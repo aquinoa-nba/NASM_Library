@@ -6,7 +6,6 @@ CC			=		gcc
 CFLAGS		=	 	-Wall -Werror -Wextra
 ASM_CC		=		nasm -f
 FORMAT		=		macho64
-# HEADER		=		libasm.h
 
 OBJS_DIR	=		.obj
 
@@ -35,7 +34,7 @@ clean:
 
 fclean:				clean
 					@rm -f $(NAME)
-					@rm -f test_asm
+					@rm -f test_asm file
 					@printf "$(UNDER_LINE)$(BOLD)$(NAME)$(NO_COLOR) $(LIGHT_RED)deleted$(NO_COLOR)\n"
 
 
